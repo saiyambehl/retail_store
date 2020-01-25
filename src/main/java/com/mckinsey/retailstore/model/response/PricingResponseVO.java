@@ -8,5 +8,5 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 public class PricingResponseVO {
-    private Double totalPrice;
+    private double totalPrice;
 }

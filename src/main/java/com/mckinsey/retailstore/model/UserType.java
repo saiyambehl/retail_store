@@ -27,7 +27,7 @@ public enum UserType {
     }
 
     public double getPrice(Product product, int quantity, User user) {
-        if (this.name().equals(CUSTOMER)) {
+        if (this.name().equals(CUSTOMER.name())) {
             this.setPricingStrategy(new CustomerPricingStrategy(new PercentageStrategy(5), user));
         }
         return this.getPricingStrategy().getPrice(product, quantity);
