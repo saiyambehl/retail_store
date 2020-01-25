@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>com.mckinsey.retailstore</OriginalElement>
+  <nodes>
+    <node x="405.59432957393494" y="209.0">com.mckinsey.retailstore.model.Product</node>
+    <node x="0.0" y="2262.0">com.mckinsey.retailstore.service.impl.PricingServiceImpl</node>
+    <node x="410.8333333333333" y="1512.0">com.mckinsey.retailstore.model.User</node>
+    <node x="323.75" y="2241.0">com.mckinsey.retailstore.controller.PriceController</node>
+    <node x="325.7113095238095" y="635.0">com.mckinsey.retailstore.service.core.IPricingStrategy</node>
+    <node x="668.7916666666667" y="538.0">com.mckinsey.retailstore.model.request.ProductDetailsVO</node>
+    <node x="243.19190162907273" y="2128.0">com.mckinsey.retailstore.service.PricingService</node>
+    <node x="90.56690162907273" y="1842.0">com.mckinsey.retailstore.model.response.PricingResponseVO</node>
+    <node x="429.60856829573936" y="1831.0">com.mckinsey.retailstore.model.request.PricingRequestVO</node>
+    <node x="371.2916666666667" y="1052.0">com.mckinsey.retailstore.service.core.CustomerPricingStrategy</node>
+    <node x="199.3024279448623" y="1239.0">com.mckinsey.retailstore.model.UserType</node>
+    <node x="924.7916666666667" y="0.0">com.mckinsey.retailstore.exception</node>
+    <node x="442.09432957393494" y="0.0">com.mckinsey.retailstore.model.ProductType</node>
+    <node x="395.7916666666667" y="865.0">com.mckinsey.retailstore.service.core.PercentageDecorator</node>
+    <node x="135.35416666666669" y="865.0">com.mckinsey.retailstore.service.core.PercentageStrategy</node>
+    <node x="1114.7916666666667" y="0.0">com.mckinsey.retailstore.config</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.mckinsey.retailstore.service.core.CustomerPricingStrategy" target="com.mckinsey.retailstore.service.core.IPricingStrategy">
+      <point x="-112.875" y="-68.5" />
+      <point x="408.9166666666667" y="1027.0" />
+      <point x="365.8541666666667" y="1027.0" />
+      <point x="365.8541666666667" y="835.0" />
+      <point x="424.7113095238095" y="835.0" />
+      <point x="0.0" y="26.5" />
+    </edge>
+    <edge source="com.mckinsey.retailstore.service.core.CustomerPricingStrategy" target="com.mckinsey.retailstore.model.User">
+      <point x="0.0" y="68.5" />
+      <point x="521.7916666666667" y="1214.0" />
+      <point x="566.4583333333333" y="1214.0" />
+      <point x="566.4583333333333" y="1492.0" />
+      <point x="533.3333333333333" y="1492.0" />
+      <point x="24.5" y="-134.5" />
+    </edge>
+    <edge source="com.mckinsey.retailstore.service.core.IPricingStrategy" target="com.mckinsey.retailstore.model.Product">
+      <point x="0.0" y="-26.5" />
+      <point x="424.7113095238095" y="518.0" />
+      <point x="506.01099624060157" y="518.0" />
+      <point x="-20.08333333333337" y="134.5" />
+    </edge>
+    <edge source="com.mckinsey.retailstore.service.core.PercentageStrategy" target="com.mckinsey.retailstore.model.Product">
+      <point x="-49.5" y="-68.5" />
+      <point x="184.85416666666669" y="508.0" />
+      <point x="465.84432957393494" y="508.0" />
+      <point x="-60.25" y="134.5" />
+    </edge>
+    <edge source="com.mckinsey.retailstore.service.core.PercentageDecorator" target="com.mckinsey.retailstore.model.Product">
+      <point x="94.5" y="-68.5" />
+      <point x="616.2916666666667" y="845.0" />
+      <point x="568.889880952381" y="845.0" />
+      <point x="568.889880952381" y="518.0" />
+      <point x="546.1776629072683" y="518.0" />
+      <point x="20.08333333333337" y="134.5" />
+    </edge>
+    <edge source="com.mckinsey.retailstore.model.User" target="com.mckinsey.retailstore.model.UserType">
+      <point x="-73.5" y="-134.5" />
+      <point x="435.3333333333333" y="1492.0" />
+      <point x="256.0524279448623" y="1492.0" />
+      <point x="-56.75" y="111.5" />
+    </edge>
+    <edge source="com.mckinsey.retailstore.model.UserType" target="com.mckinsey.retailstore.service.core.CustomerPricingStrategy">
+      <point x="90.79999999999995" y="-111.5" />
+      <point x="403.60242794486226" y="1214.0" />
+      <point x="421.4583333333333" y="1214.0" />
+      <point x="-100.33333333333337" y="68.5" />
+    </edge>
+    <edge source="com.mckinsey.retailstore.model.UserType" target="com.mckinsey.retailstore.service.core.IPricingStrategy">
+      <point x="0.0" y="-111.5" />
+      <point x="312.8024279448623" y="1214.0" />
+      <point x="343.8541666666667" y="1214.0" />
+      <point x="343.8541666666667" y="815.0" />
+      <point x="368.13988095238096" y="815.0" />
+      <point x="-56.571428571428555" y="26.5" />
+    </edge>
+    <edge source="com.mckinsey.retailstore.model.Product" target="com.mckinsey.retailstore.model.ProductType">
+      <point x="0.0" y="-134.5" />
+      <point x="0.0" y="79.5" />
+    </edge>
+    <edge source="com.mckinsey.retailstore.service.core.CustomerPricingStrategy" target="com.mckinsey.retailstore.model.Product">
+      <point x="112.875" y="-68.5" />
+      <point x="634.6666666666667" y="1027.0" />
+      <point x="658.2916666666667" y="1027.0" />
+      <point x="658.2916666666667" y="518.0" />
+      <point x="586.3443295739349" y="518.0" />
+      <point x="60.25" y="134.5" />
+    </edge>
+    <edge source="com.mckinsey.retailstore.service.impl.PricingServiceImpl" target="com.mckinsey.retailstore.service.PricingService">
+      <point x="40.5" y="-26.5" />
+      <point x="202.5" y="2211.0" />
+      <point x="324.19190162907273" y="2211.0" />
+      <point x="-81.0" y="26.5" />
+    </edge>
+    <edge source="com.mckinsey.retailstore.service.impl.PricingServiceImpl" target="com.mckinsey.retailstore.model.response.PricingResponseVO">
+      <point x="-121.5" y="-26.5" />
+      <point x="40.5" y="2221.0" />
+      <point x="110.5" y="2221.0" />
+      <point x="110.5" y="2103.0" />
+      <point x="115.19190162907273" y="2103.0" />
+      <point x="-73.875" y="112.5" />
+    </edge>
+    <edge source="com.mckinsey.retailstore.service.impl.PricingServiceImpl" target="com.mckinsey.retailstore.model.request.PricingRequestVO">
+      <point x="121.5" y="-26.5" />
+      <point x="283.5" y="2221.0" />
+      <point x="577.6919016290727" y="2221.0" />
+      <point x="577.6919016290727" y="2103.0" />
+      <point x="583.1085682957394" y="2103.0" />
+      <point x="0.0" y="123.5" />
+    </edge>
+    <edge source="com.mckinsey.retailstore.controller.PriceController" target="com.mckinsey.retailstore.model.response.PricingResponseVO">
+      <point x="-131.33333333333337" y="-47.5" />
+      <point x="389.41666666666663" y="2201.0" />
+      <point x="175.44190162907273" y="2201.0" />
+      <point x="175.44190162907273" y="2103.0" />
+      <point x="213.69190162907273" y="2103.0" />
+      <point x="24.625" y="112.5" />
+    </edge>
+    <edge source="com.mckinsey.retailstore.controller.PriceController" target="com.mckinsey.retailstore.service.PricingService">
+      <point x="0.0" y="-47.5" />
+      <point x="520.75" y="2211.0" />
+      <point x="486.19190162907273" y="2211.0" />
+      <point x="81.0" y="26.5" />
+    </edge>
+    <edge source="com.mckinsey.retailstore.controller.PriceController" target="com.mckinsey.retailstore.model.request.PricingRequestVO">
+      <point x="131.33333333333337" y="-47.5" />
+      <point x="652.0833333333334" y="2221.0" />
+      <point x="641.2291666666666" y="2221.0" />
+      <point x="641.2291666666666" y="2103.0" />
+      <point x="685.4419016290726" y="2103.0" />
+      <point x="102.33333333333326" y="123.5" />
+    </edge>
+    <edge source="com.mckinsey.retailstore.service.core.PercentageStrategy" target="com.mckinsey.retailstore.service.core.IPricingStrategy">
+      <point x="49.5" y="-68.5" />
+      <point x="283.8541666666667" y="805.0" />
+      <point x="339.85416666666663" y="805.0" />
+      <point x="-84.85714285714289" y="26.5" />
+    </edge>
+    <edge source="com.mckinsey.retailstore.service.PricingService" target="com.mckinsey.retailstore.model.request.PricingRequestVO">
+      <point x="81.0" y="-26.5" />
+      <point x="486.19190162907273" y="2103.0" />
+      <point x="480.77523496240605" y="2103.0" />
+      <point x="-102.33333333333331" y="123.5" />
+    </edge>
+    <edge source="com.mckinsey.retailstore.model.request.ProductDetailsVO" target="com.mckinsey.retailstore.model.Product">
+      <point x="0.0" y="-123.5" />
+      <point x="774.2916666666667" y="508.0" />
+      <point x="626.5109962406016" y="508.0" />
+      <point x="100.41666666666663" y="134.5" />
+    </edge>
+    <edge source="com.mckinsey.retailstore.service.core.PercentageDecorator" target="com.mckinsey.retailstore.service.core.IPricingStrategy">
+      <point x="31.5" y="-68.5" />
+      <point x="553.2916666666667" y="845.0" />
+      <point x="509.5684523809524" y="845.0" />
+      <point x="84.85714285714289" y="26.5" />
+    </edge>
+    <edge source="com.mckinsey.retailstore.model.UserType" target="com.mckinsey.retailstore.model.User">
+      <point x="56.75" y="111.5" />
+      <point x="369.5524279448623" y="1482.0" />
+      <point x="484.3333333333333" y="1482.0" />
+      <point x="-24.5" y="-134.5" />
+    </edge>
+    <edge source="com.mckinsey.retailstore.model.UserType" target="com.mckinsey.retailstore.model.Product">
+      <point x="-90.80000000000007" y="-111.5" />
+      <point x="222.00242794486223" y="1214.0" />
+      <point x="124.85416666666669" y="1214.0" />
+      <point x="124.85416666666669" y="498.0" />
+      <point x="425.6776629072683" y="498.0" />
+      <point x="-100.41666666666663" y="134.5" />
+    </edge>
+    <edge source="com.mckinsey.retailstore.model.request.PricingRequestVO" target="com.mckinsey.retailstore.model.request.ProductDetailsVO">
+      <point x="76.75" y="-123.5" />
+      <point x="659.8585682957394" y="1806.0" />
+      <point x="774.2916666666667" y="1806.0" />
+      <point x="0.0" y="123.5" />
+    </edge>
+    <edge source="com.mckinsey.retailstore.service.core.CustomerPricingStrategy" target="com.mckinsey.retailstore.service.core.PercentageDecorator">
+      <point x="-37.625" y="-68.5" />
+      <point x="484.1666666666667" y="1027.0" />
+      <point x="458.7916666666667" y="1027.0" />
+      <point x="-63.0" y="68.5" />
+    </edge>
+    <edge source="com.mckinsey.retailstore.service.PricingService" target="com.mckinsey.retailstore.model.response.PricingResponseVO">
+      <point x="-81.0" y="-26.5" />
+      <point x="324.19190162907273" y="2103.0" />
+      <point x="262.94190162907273" y="2103.0" />
+      <point x="73.875" y="112.5" />
+    </edge>
+    <edge source="com.mckinsey.retailstore.model.UserType" target="com.mckinsey.retailstore.service.core.PercentageStrategy">
+      <point x="-45.40000000000009" y="-111.5" />
+      <point x="267.4024279448622" y="1214.0" />
+      <point x="234.35416666666669" y="1214.0" />
+      <point x="0.0" y="68.5" />
+    </edge>
+    <edge source="com.mckinsey.retailstore.model.request.PricingRequestVO" target="com.mckinsey.retailstore.model.User">
+      <point x="-76.75" y="-123.5" />
+      <point x="506.35856829573936" y="1806.0" />
+      <point x="508.8333333333333" y="1806.0" />
+      <point x="0.0" y="134.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="347.0" y="243.5" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Constructors</Category>
+    <Category>Methods</Category>
+    <Category>Properties</Category>
+    <Category>Inner Classes</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
